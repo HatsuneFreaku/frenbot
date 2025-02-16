@@ -1,6 +1,6 @@
 import os
 import crescent, hikari
-from keep_online import keep_alive
+from keep_alive import keep_alive
 
 bot = hikari.GatewayBot(os.environ["TOKEN"], intents = hikari.Intents.ALL)
 client = crescent.Client(bot)
