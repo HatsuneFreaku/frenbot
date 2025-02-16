@@ -5,4 +5,4 @@ run = "python -m fren"
 channel = "stable-24_05"
 
 [deployment]
-run = ["sh", "-c", "python -m fren"]
+run = ["python fren"]
