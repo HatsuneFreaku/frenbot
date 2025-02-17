@@ -9,7 +9,11 @@ if __name__ == "__main__":
     if os.name != "nt":
         import asyncio
 
-
+@client.include()
+@client.command(name="ping", description="Ping the bot")
+class PingCommand:
+    async def callback(self, ctx: crescent.Context) -> None:
+        await ctx.respond("Pong!")
 
 
 keep_alive()
